@@ -29,6 +29,10 @@ class MyClient(discord.Client):
         if message.content == 'Hola!':
             await message.channel.send('¡Hola! ¿Cómo estás? Bienvenido a mi Servidor, soy un proyecto de miembros de FrontEndCafé. ¿Querés un matesito? :)')
 
+        if message.content == '!link':
+            await message.channel.send('Enlace para invitar a Discord FrontEndCafé: https://discord.com/invite/3GC6TJd')
+
+
 client = MyClient()
 
 client.run(TOKEN)
